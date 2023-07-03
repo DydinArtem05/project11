@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Flash Cards</title>
+</head>
+
+<body>
+    <div class="flashcard__app">
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__logo">Flashcards</div>
+
+                <nav class="header__nav">
+                    <div class="nav__item"><button id="newCard">New Card</button></div>
+                    <div class="nav__item"><button id="deleteCards">Delete Cards</button></div>
+                </nav>
+            </header>
+
+            <main>
+                <div class="create__flashcard" id="create-form">
+                    <div class="create__flashcard-logo">Create Flashcard</div>
+
+                    <div class="create__flashcard-main">
+                        <div class="create__flashcard-item">
+                            <div class="create__flashcard-item-logo">Question</div>
+                            <input type="text" id="question" class="create__flashcard-item-input">
+                        </div>
+                        <div class="create__flashcard-item">
+                            <div class="create__flashcard-item-logo">Answer</div>
+                            <input type="text" id="answer" class="create__flashcard-item-input">
+                        </div>
+                    </div>
+
+                    <div class="create__flashcard-buttons">
+                        <button id="save">Save</button>
+                        <button id="close">Close</button>
+                    </div>
+                </div>
+
+                <div class="flashcards">
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
